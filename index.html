@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+<title>JobProof — Job proof, costs, and crews in one app</title>
+<meta name="description" content="JobProof keeps photos, notes, receipts, time, and job costs together for restoration and construction contractors." />
+<link href="https://api.fontshare.com/v2/css?f[]=satoshi@400,500,700,900&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="style.css" />
+</head>
+<body>
+<header class="nav">
+  <div class="wrap navrow">
+    <a href="#" class="brand" aria-label="JobProof home">
+      <span class="logo"><svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round"><path d="M12 3 4 7v5c0 4.6 3.2 7.9 8 9 4.8-1.1 8-4.4 8-9V7l-8-4z"/><path d="m9 12 2 2 4-4"/></svg></span>
+      JobProof
+    </a>
+    <nav class="links">
+      <a href="#features">Features</a>
+      <a href="#how">How it works</a>
+      <a href="#contact" class="btn small">Request a pilot</a>
+    </nav>
+  </div>
+</header>
+
+<main>
+  <section class="hero wrap">
+    <div>
+      <p class="eyebrow">Built by a restoration tech, for contractors</p>
+      <h1>Every job documented. Every dollar tracked.</h1>
+      <p class="lead">JobProof keeps photos, notes, receipts, crew time, and job costs together — so the field stays simple and the office always knows where each job stands against the bid.</p>
+      <div class="ctas">
+        <a href="#contact" class="btn">Request a pilot</a>
+        <a href="#features" class="btn ghost">See features</a>
+      </div>
+      <p class="fine">Android · Works offline on job sites</p>
+    </div>
+    <div class="mock" aria-hidden="true">
+      <div class="phone">
+        <div class="pcard dark">
+          <small>You're working on</small>
+          <b>Oak Street Water Damage</b>
+          <span>Mitigation · Day 2 of 4</span>
+        </div>
+        <div class="pcard">
+          <div class="prow"><b>Cost vs bid</b><span class="tag">1 CR</span></div>
+          <div class="bar"><i style="width:48%"></i></div>
+          <span>$6,850 of $14,250</span>
+        </div>
+        <div class="pcard"><div class="prow"><b>4 before photos</b><span class="ok">Synced</span></div></div>
+        <div class="pcard"><div class="prow"><b>Home Depot receipt</b><span class="wait">On phone</span></div></div>
+      </div>
+    </div>
+  </section>
+
+  <section id="features" class="band">
+    <div class="wrap">
+      <h2>What JobProof does</h2>
+      <div class="grid">
+        <article><h3>Photo proof</h3><p>Before, during, and after photos tied to the job, phase, and time — saved on the phone even without service.</p></article>
+        <article><h3>Job guide for crews</h3><p>Field workers see the scope, hours, and materials for each job. Pricing stays with the office.</p></article>
+        <article><h3>GPS time clock</h3><p>Clock in and out only at the job location, so hours are accurate and easy to defend.</p></article>
+        <article><h3>Receipts &amp; costs</h3><p>Snap a receipt and it lands on the right job and phase. Costs roll up automatically.</p></article>
+        <article><h3>Departments</h3><p>Owners set up departments like Mitigation, Rebuild, Contents, and Roofing to group work their way.</p></article>
+        <article><h3>Cost to bid &amp; CRs</h3><p>See every job's cost against its bid, plus change requests, at a glance.</p></article>
+      </div>
+    </div>
+  </section>
+
+  <section id="how" class="wrap how">
+    <h2>How it works</h2>
+    <ol>
+      <li><b>Set up your company.</b> Add departments, jobs, and your team with the right access for each role.</li>
+      <li><b>Crews work the job.</b> Photos, notes, receipts, and time go in with a few taps — online or off.</li>
+      <li><b>The office stays current.</b> Everything syncs to one job record with costs, proof, and billing ready.</li>
+    </ol>
+  </section>
+
+  <section id="contact" class="band">
+    <div class="wrap contact">
+      <div>
+        <h2>Join the contractor pilot</h2>
+        <p>We're working with a small group of restoration and construction companies before public launch. Tell us about your crew and we'll reach out.</p>
+      </div>
+      <div class="ccard">
+        <p><b>JobProof LLC</b><br>Sioux Falls, South Dakota</p>
+        <p><a id="mail" href="#">Email us</a></p>
+      </div>
+    </div>
+  </section>
+</main>
+
+<footer class="wrap foot">
+  <span>© <span id="yr"></span> JobProof LLC. All rights reserved.</span>
+  <span class="flinks"><a href="privacy.html">Privacy Policy</a><a href="delete-account.html">Delete your account</a></span>
+</footer>
+
+<script>
+  const CONTACT_EMAIL = 'jobproofllc@gmail.com';
+  const m = document.getElementById('mail');
+  if (m) { m.href = 'mailto:' + CONTACT_EMAIL + '?subject=JobProof%20pilot'; m.textContent = CONTACT_EMAIL; }
+  const y = document.getElementById('yr'); if (y) y.textContent = new Date().getFullYear();
+</script>
+</body>
+</html>
